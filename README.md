@@ -158,5 +158,55 @@ npx http-server -p 3000
 
 ---
 
+## 更新網站 (Quick Commands)
+
+修改本地檔案後，執行以下指令同步到 GitHub：
+
+```bash
+cd c:\Users\ASUS\Desktop\Personal_Website
+git add .
+git commit -m "Update: 說明變更內容"
+git push
+```
+
+GitHub Pages 會自動重新部署，約 1-2 分鐘後生效。
+
+---
+
+## 資安說明 (Public Repository 安全性)
+
+### ✅ 本專案是安全的
+
+| 檢查項目 | 狀態 | 說明 |
+|----------|------|------|
+| 後端程式碼 | ❌ 無 | 純前端靜態網站，無伺服器端程式 |
+| 資料庫連線 | ❌ 無 | 無任何資料庫存取 |
+| API 金鑰 | ❌ 無 | 無任何 API 金鑰或密碼 |
+| 使用者驗證 | ❌ 無 | 無登入系統 |
+| 外部依賴 | ⚠️ 僅 CDN | 僅使用 Google Fonts CDN |
+
+### 🔒 Public Repository 不會暴露什麼？
+
+- **您的電腦**：GitHub 只儲存您推送的檔案，無法存取您的電腦
+- **其他資料夾**：只有 `Personal_Website` 資料夾內的檔案會公開
+- **敏感路徑**：程式碼中的本地路徑 (如 `c:\Users\ASUS\...`) 是開發時的參考，不會造成安全風險
+
+### ⚠️ 注意事項
+
+1. **不要上傳**：
+   - 密碼、API 金鑰、私人憑證
+   - `.env` 檔案
+   - 個人身分證件或銀行資料
+
+2. **已上傳的內容**：
+   - Email 和電話號碼已公開（這是您選擇展示的聯絡方式）
+   - PDF 報告內容會公開
+
+3. **如果誤傳敏感資料**：
+   - 立即刪除檔案並推送
+   - 使用 `git filter-branch` 或 BFG Repo-Cleaner 清除歷史記錄
+
+---
+
 ## 授權
 © 2026 張祐愷 (Yu-Kai Chang). All rights reserved.

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="張祐愷 - 材料科學與 AI 整合專家 | 專精於 Reduced Order Model、PMA 薄膜、Agent IDE 開發">
+    <meta name="keywords" content="張祐愷, ROM, PMA, 磁性薄膜, Agent IDE, Digital Twin, 材料科學">
+    <meta name="author" content="張祐愷">
+    <title>張祐愷 | Materials Science & AI Integration</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Yu-Kai Chang</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#toolkit">Kit</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hi, I am</p>
+            <h1 class="hero-name">Yu-Kai Chang</h1>
+            <h2 class="hero-tagline">Materials Science & Artificial Intelligence</h2>
+            <p class="hero-description">
+                專注於將 AI 技術整合至材料開發流程，加速創新材料的研發與最佳化，
+                並開發 Digital Twin ROM 預測模型。
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        我是張祐愷，目前就讀於國立虎尾科技大學材料科學與綠色能源工程碩士班，
+                        研究方向為開發磁控濺鍍之降階模型 (Reduced Order Model)，
+                        結合 Human-in-the-loop AI 框架，加速具垂直磁異向性 (PMA) 薄膜的製程開發。
+                    </p>
+                    <p>
+                        我相信材料科學與 AI 的整合能夠大幅提升研發效率。透過與 Agent IDE 協作與自定義 Framework，
+                        我建構了一套閉環迴圈系統，使 ROM 模型能夠隨迭代逐步校正，精準預測鍍膜結果，
+                        為未來的 Digital Twin 預測模型奠定基礎。
+                    </p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="highlight-item">
+                        <div>
+                            <div class="highlight-value">GPA 4.0</div>
+                            <div class="highlight-label">碩士班成績</div>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div>
+                            <div class="highlight-value">TOEIC 710</div>
+                            <div class="highlight-label">英語能力</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="section-container">
+            <h2 class="section-title reveal">Skills</h2>
+            <div class="skills-grid">
+                <!-- ROM -->
+                <div class="card reveal">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">Reduced Order Model (ROM)</h3>
+                    <p>利用材料科學與機台知識，與 Agent IDE 協作建置磁控濺鍍 ROM，開發抽氣、電漿判定、電源供應、膜厚預測、薄膜成分預測等模組。</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Prompt</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                </div>
+
+                <!-- PMA -->
+                <div class="card reveal">
+                    <div class="card-icon">🧲</div>
+                    <h3 class="card-title">PMA Thin Film</h3>
+                    <p>研究具垂直磁異向性之磁性薄膜，深入理解薄膜製程、PMA 成因及其底層機制 (Bruno and Van der Laan model)。</p>
+                    <div class="card-tags">
+                        <span class="tag">Material Science</span>
+                        <span class="tag">Principle</span>
+                    </div>
+                </div>
+
+                <!-- Agent IDE -->
+                <div class="card reveal">
+                    <div class="card-icon">🤖</div>
+                    <h3 class="card-title">Agent IDE (Vibe Coding)</h3>
+                    <p>利用 Agent IDE（Antigravity、Cursor 等）開發程式專案，定義 Digital Twin virtual model 之行為。</p>
+                    <div class="card-tags">
+                        <span class="tag">LLM</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Prompt</span>
+                    </div>
+                </div>
+
+                <!-- NVIDIA Omniverse -->
+                <div class="card reveal">
+                    <div class="card-icon">🌐</div>
+                    <h3 class="card-title">NVIDIA Omniverse</h3>
+                    <p>具備 Omniverse 基礎環境建置、Script Editor、Customize Extension、OpenUSD 及 Digital Twin 應用經驗。</p>
+                    <div class="card-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Digital Twin</span>
+                    </div>
+                </div>
+
+                <!-- Edge AI -->
+                <div class="card reveal">
+                    <div class="card-icon">🖥️</div>
+                    <h3 class="card-title">Edge AI</h3>
+                    <p>在本地端架設邊緣運算 AI（Ollama），透過 RAG 增進效能，實驗數據在本地處理，無資料外洩風險。</p>
+                    <div class="card-tags">
+                        <span class="tag">LLM</span>
+                        <span class="tag">AI</span>
+                        <span class="tag">RAG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-container">
+            <h2 class="section-title reveal">Projects</h2>
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <h3>Digital Twin (Display)</h3>
+                    <div class="project-links">
+                        <a href="Projects/Digital Twin/Digital Twin(Display) .pdf" target="_blank" rel="noopener"
+                            class="btn btn-primary" aria-label="View Project">
+                            View PDF Report 📄
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    此為 Digital Twin report demo 版，為保護實驗室資產，已將開發資料及敏感內部內容資料隱藏。
+                </p>
+                <div class="card-tags">
+                    <span class="tag">Digital Twin</span>
+                    <span class="tag">Report</span>
+                    <span class="tag">Demo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toolkit Section -->
+    <section class="toolkit" id="toolkit">
+        <div class="section-container">
+            <h2 class="section-title reveal">Kit</h2>
+            <div class="toolkit-grid">
+                <!-- Category 1: Development Toolkit -->
+                <div class="card toolkit-card reveal">
+                    <div class="card-icon">🛠️</div>
+                    <h3 class="card-title">Development Toolkit</h3>
+                    <ol>
+                        <li>Google Antigravity (Agent IDE)</li>
+                        <li>Cursor (Agent IDE)</li>
+                        <li>NVIDIA Omniverse</li>
+                        <li>Edge AI (Ollama)</li>
+                        <li>LLM Services (Gemini, ChatGPT, Perplexity, Claude)</li>
+                        <li>Github (Version Control, Project Publish)</li>
+                    </ol>
+                </div>
+
+                <!-- Category 2: Analyze Software -->
+                <div class="card toolkit-card reveal">
+                    <div class="card-icon">📊</div>
+                    <h3 class="card-title">Analyze Software</h3>
+                    <ol>
+                        <li>DIFFRAC.EVA (Bruker)</li>
+                        <li>Origin</li>
+                    </ol>
+                </div>
+
+                <!-- Category 3: Instrument Operation -->
+                <div class="card toolkit-card reveal">
+                    <div class="card-icon">🔬</div>
+                    <h3 class="card-title">Instrument Operation</h3>
+                    <ol>
+                        <li>Scanning Electron Microscope (SEM)</li>
+                        <li>Energy Dispersive Spectroscopy (EDS)</li>
+                        <li>X-ray Diffraction (XRD)</li>
+                        <li>Sputter Coater</li>
+                    </ol>
+                </div>
+
+                <!-- Category 4: Presentation & Editing -->
+                <div class="card toolkit-card reveal">
+                    <div class="card-icon">📝</div>
+                    <h3 class="card-title">Presentation & File Editing</h3>
+                    <ol>
+                        <li>Canva (Workflow, Workchart, Report)</li>
+                        <li>draw.io Diagrams (Workflow)</li>
+                        <li>PowerPoint (Report, Screen Recording)</li>
+                        <li>Word, Excel</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="contact-content reveal">
+                <h2 class="section-title reveal">Contact</h2>
+                <p class="contact-text reveal">
+                    如果有任何問題或合作機會，歡迎隨時與我聯繫！
+                </p>
+                <div class="contact-links">
+                    <div class="contact-link copy-item" data-value="6304john@gmail.com" style="cursor: pointer;"
+                        title="Click to copy">
+                        <div class="contact-info">✉️ Email: 6304john@gmail.com</div>
+                        <small class="copy-hint">📋 Click to Copy</small>
+                    </div>
+                    <div class="contact-link copy-item" data-value="0907370007" style="cursor: pointer;"
+                        title="Click to copy">
+                        <div class="contact-info">📞 Phone: 0907370007</div>
+                        <small class="copy-hint">📋 Click to Copy</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 張祐愷(Yu-Kai Chang) Built with Agent IDE.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

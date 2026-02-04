@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -9,11 +9,29 @@
     <meta name="author" content="張祐愷">
     <title>張祐愷 | Materials Science & AI Integration</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="photo/favicon.png">
+    <link rel="apple-touch-icon" href="photo/favicon.png">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://johnkai-kai.github.io/Personal_website/">
+    <meta property="og:title" content="張祐愷 | Materials Science & AI Integration">
+    <meta property="og:description" content="張祐愷 - 材料科學與 AI 整合專家 | 專精於 Reduced Order Model、PMA 薄膜、Agent IDE 開發">
+    <meta property="og:image" content="https://johnkai-kai.github.io/Personal_website/photo/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://johnkai-kai.github.io/Personal_website/">
+    <meta property="twitter:title" content="張祐愷 | Materials Science & AI Integration">
+    <meta property="twitter:description" content="張祐愷 - 材料科學與 AI 整合專家 | 專精於 Reduced Order Model、PMA 薄膜、Agent IDE 開發">
+    <meta property="twitter:image" content="https://johnkai-kai.github.io/Personal_website/photo/og-image.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Mono:wght@400;700&display=swap"
         rel="stylesheet">
 
     <!-- Styles -->
@@ -31,11 +49,11 @@
                 <span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#toolkit">Kit</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about" class="nav-link">About Me</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#toolkit" class="nav-link">Kit</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -102,7 +120,7 @@
             <div class="skills-grid">
                 <!-- ROM -->
                 <div class="card reveal">
-                    <div class="card-icon">⚡</div>
+                    <div class="card-icon" role="img" aria-label="Reduced Order Model">⚡</div>
                     <h3 class="card-title">Reduced Order Model (ROM)</h3>
                     <p>利用材料科學與機台知識，與 Agent IDE 協作建置磁控濺鍍 ROM，開發抽氣、電漿判定、電源供應、膜厚預測、薄膜成分預測等模組。</p>
                     <div class="card-tags">
@@ -114,7 +132,7 @@
 
                 <!-- PMA -->
                 <div class="card reveal">
-                    <div class="card-icon">🧲</div>
+                    <div class="card-icon" role="img" aria-label="PMA Thin Film">🧲</div>
                     <h3 class="card-title">PMA Thin Film</h3>
                     <p>研究具垂直磁異向性之磁性薄膜，深入理解薄膜製程、PMA 成因及其底層機制 (Bruno and Van der Laan model)。</p>
                     <div class="card-tags">
@@ -125,7 +143,7 @@
 
                 <!-- Agent IDE -->
                 <div class="card reveal">
-                    <div class="card-icon">🤖</div>
+                    <div class="card-icon" role="img" aria-label="Agent IDE">🤖</div>
                     <h3 class="card-title">Agent IDE (Vibe Coding)</h3>
                     <p>利用 Agent IDE（Antigravity、Cursor 等）開發程式專案，定義 Digital Twin virtual model 之行為。</p>
                     <div class="card-tags">
@@ -137,7 +155,7 @@
 
                 <!-- NVIDIA Omniverse -->
                 <div class="card reveal">
-                    <div class="card-icon">🌐</div>
+                    <div class="card-icon" role="img" aria-label="NVIDIA Omniverse">🌐</div>
                     <h3 class="card-title">NVIDIA Omniverse</h3>
                     <p>具備 Omniverse 基礎環境建置、Script Editor、Customize Extension、OpenUSD 及 Digital Twin 應用經驗。</p>
                     <div class="card-tags">
@@ -148,7 +166,7 @@
 
                 <!-- Edge AI -->
                 <div class="card reveal">
-                    <div class="card-icon">🖥️</div>
+                    <div class="card-icon" role="img" aria-label="Edge AI">🖥️</div>
                     <h3 class="card-title">Edge AI</h3>
                     <p>在本地端架設邊緣運算 AI（Ollama），透過 RAG 增進效能，實驗數據在本地處理，無資料外洩風險。</p>
                     <div class="card-tags">
@@ -176,12 +194,32 @@
                     </div>
                 </div>
                 <p class="project-description">
-                    此為 Digital Twin report demo 版，為保護實驗室資產，已將開發資料及敏感內部內容資料隱藏。
+                    此為 Digital Twin report Demo，說明對 Digital Twin 的認知，以及 Agent IDE 的開發工作流程。為保護實驗室資產，已將開發資料及敏感內部內容資料隱藏。
                 </p>
                 <div class="card-tags">
                     <span class="tag">Digital Twin</span>
                     <span class="tag">Report</span>
                     <span class="tag">Demo</span>
+                </div>
+            </div>
+            <!-- EVA SOP Project -->
+            <div class="project-card reveal">
+                <div class="project-header">
+                    <h3>DIFFRAC.EVA SOP</h3>
+                    <div class="project-links">
+                        <a href="Projects/EVA_SOP/EVA_SOP.pdf" target="_blank" rel="noopener" class="btn btn-primary"
+                            aria-label="View Project">
+                            View PDF Report 📄
+                        </a>
+                    </div>
+                </div>
+                <p class="project-description">
+                    此為 BRUKER 所生產之 XRD 儀器分析軟體 DIFFRAC.EVA 之詳細 SOP Demo 版，具備學習儀器、分析軟體、建立標準化操作流程之能力。
+                </p>
+                <div class="card-tags">
+                    <span class="tag">XRD</span>
+                    <span class="tag">SOP</span>
+                    <span class="tag">BRUKER</span>
                 </div>
             </div>
         </div>
@@ -194,7 +232,7 @@
             <div class="toolkit-grid">
                 <!-- Category 1: Development Toolkit -->
                 <div class="card toolkit-card reveal">
-                    <div class="card-icon">🛠️</div>
+                    <div class="card-icon" role="img" aria-label="Development Toolkit">🛠️</div>
                     <h3 class="card-title">Development Toolkit</h3>
                     <ol>
                         <li>Google Antigravity (Agent IDE)</li>
@@ -208,7 +246,7 @@
 
                 <!-- Category 2: Analyze Software -->
                 <div class="card toolkit-card reveal">
-                    <div class="card-icon">📊</div>
+                    <div class="card-icon" role="img" aria-label="Analyze Software">📊</div>
                     <h3 class="card-title">Analyze Software</h3>
                     <ol>
                         <li>DIFFRAC.EVA (Bruker)</li>
@@ -218,7 +256,7 @@
 
                 <!-- Category 3: Instrument Operation -->
                 <div class="card toolkit-card reveal">
-                    <div class="card-icon">🔬</div>
+                    <div class="card-icon" role="img" aria-label="Instrument Operation">🔬</div>
                     <h3 class="card-title">Instrument Operation</h3>
                     <ol>
                         <li>Scanning Electron Microscope (SEM)</li>
@@ -230,7 +268,7 @@
 
                 <!-- Category 4: Presentation & Editing -->
                 <div class="card toolkit-card reveal">
-                    <div class="card-icon">📝</div>
+                    <div class="card-icon" role="img" aria-label="Presentation & File Editing">📝</div>
                     <h3 class="card-title">Presentation & File Editing</h3>
                     <ol>
                         <li>Canva (Workflow, Workchart, Report)</li>
@@ -240,7 +278,6 @@
                     </ol>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 
@@ -252,17 +289,35 @@
                 <p class="contact-text reveal">
                     如果有任何問題或合作機會，歡迎隨時與我聯繫！
                 </p>
-                <div class="contact-links">
-                    <div class="contact-link copy-item" data-value="6304john@gmail.com" style="cursor: pointer;"
-                        title="Click to copy">
-                        <div class="contact-info">✉️ Email: 6304john@gmail.com</div>
+                <div class="contact-grid">
+                    <!-- Email -->
+                    <div class="contact-card copy-item" data-value="6304john@gmail.com" title="Click to copy">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-label">Email</div>
+                        <div class="contact-value">6304john@gmail.com</div>
                         <small class="copy-hint">📋 Click to Copy</small>
                     </div>
-                    <div class="contact-link copy-item" data-value="0907370007" style="cursor: pointer;"
-                        title="Click to copy">
-                        <div class="contact-info">📞 Phone: 0907370007</div>
+                    <!-- Phone -->
+                    <div class="contact-card copy-item" data-value="0907370007" title="Click to copy">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-label">Phone</div>
+                        <div class="contact-value">0907370007</div>
                         <small class="copy-hint">📋 Click to Copy</small>
                     </div>
+                    <!-- GitHub -->
+                    <a href="https://github.com/johnkai-kai" target="_blank" rel="noopener"
+                        class="contact-card contact-card-link">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </div>
+                        <div class="contact-label">GitHub</div>
+                        <div class="contact-value">johnkai-kai</div>
+                        <small class="copy-hint">🔗 View Profile</small>
+                    </a>
                 </div>
             </div>
         </div>
@@ -270,10 +325,16 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>© 2026 張祐愷(Yu-Kai Chang) Built with Agent IDE.</p>
-        </div>
+        <p>© 2026 張祐愷(Yu-Kai Chang) Built with Agent IDE.</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
 
     <script src="js/main.js"></script>
 </body>

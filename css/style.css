@@ -362,7 +362,7 @@ section {
     /* Improve reading flow for tight blocks */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .about-content {
         flex-direction: column;
         text-align: center;
@@ -372,6 +372,8 @@ section {
     .hero-container {
         flex-direction: column;
         text-align: center;
+        gap: var(--spacing-md);
+        padding-top: 2rem;
     }
 
     .hero-content {
@@ -379,8 +381,29 @@ section {
     }
 
     .hero-photo-wrapper .photo-carousel {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .hero-description,
+    .hero-tagline {
+        white-space: normal !important;
+        /* Force wrap on mobile */
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-tags {
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .hero-tag {
+        font-size: 0.75rem;
+        /* Smaller text on mobile */
+        padding: 0.3rem 0.6rem;
     }
 }
 

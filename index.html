@@ -10,22 +10,24 @@
     <title>張祐愷 | Materials Science & AI Integration</title>
 
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="photo/favicon.png">
-    <link rel="apple-touch-icon" href="photo/favicon.png">
+    <link rel="icon" type="image/png" href="Materials/photo/web_logo/favicon.png">
+    <link rel="apple-touch-icon" href="Materials/photo/web_logo/favicon.png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://johnkai-kai.github.io/Personal_website/">
     <meta property="og:title" content="張祐愷 | Materials Science & AI Integration">
     <meta property="og:description" content="張祐愷 - 材料科學與 AI 整合專家 | 專精於 Reduced Order Model、PMA 薄膜、Agent IDE 開發">
-    <meta property="og:image" content="https://johnkai-kai.github.io/Personal_website/photo/og-image.png">
+    <meta property="og:image"
+        content="https://johnkai-kai.github.io/Personal_website/Materials/photo/web_logo/og-image.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://johnkai-kai.github.io/Personal_website/">
     <meta property="twitter:title" content="張祐愷 | Materials Science & AI Integration">
     <meta property="twitter:description" content="張祐愷 - 材料科學與 AI 整合專家 | 專精於 Reduced Order Model、PMA 薄膜、Agent IDE 開發">
-    <meta property="twitter:image" content="https://johnkai-kai.github.io/Personal_website/photo/og-image.png">
+    <meta property="twitter:image"
+        content="https://johnkai-kai.github.io/Personal_website/Materials/photo/web_logo/og-image.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,17 +62,37 @@
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-content">
-            <p class="hero-greeting">Hi, I am</p>
-            <h1 class="hero-name">Yu-Kai Chang</h1>
-            <h2 class="hero-tagline">Materials Science & Artificial Intelligence</h2>
-            <p class="hero-description">
-                專注於將 AI 技術整合至材料開發流程，加速創新材料的研發與最佳化，
-                並開發 Digital Twin ROM 預測模型。
-            </p>
-            <div class="hero-cta">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        <div class="hero-container">
+            <!-- Photo Carousel -->
+            <!-- Photo Carousel -->
+            <div class="hero-photo-wrapper">
+                <div class="photo-carousel" id="heroCarousel">
+                    <img src="Materials/photo/person_photo/工作照/大頭照.jpg" alt="Yu-Kai Chang 大頭照"
+                        class="carousel-photo active">
+                </div>
+            </div>
+            <!-- Text Content -->
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I am</p>
+                <h1 class="hero-name">Yu-Kai Chang</h1>
+                <h2 class="hero-tagline">Materials Science & Artificial Intelligence</h2>
+                <p class="hero-description">
+                    專注於將 AI 技術整合至材料開發流程，加速創新材料的研發與最佳化，
+                    並開發 Digital Twin ROM 預測模型。
+                </p>
+
+                <!-- Tech Stack Badges -->
+                <div class="hero-tags">
+                    <span class="hero-tag">⚡ Reduced Order Model (ROM)</span>
+                    <span class="hero-tag">🌐 Digital Twin</span>
+                    <span class="hero-tag">🤖 Agent IDE Framework</span>
+                    <span class="hero-tag">🧪 Perpendicular Magnetic Anisotropy Thin Film</span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -83,6 +105,23 @@
         <div class="section-container">
             <h2 class="section-title reveal">About Me</h2>
             <div class="about-content">
+                <!-- Photo Carousel -->
+                <div class="about-photo-wrapper reveal">
+                    <div class="photo-carousel" id="aboutCarousel">
+                        <img src="Materials/photo/person_photo/生活照/生活照_1.jpeg" alt="生活照 1"
+                            class="carousel-photo active">
+                        <img src="Materials/photo/person_photo/生活照/生活照_2.jpeg" alt="生活照 2" class="carousel-photo">
+                        <img src="Materials/photo/person_photo/生活照/生活照_3.jpg" alt="生活照 3" class="carousel-photo">
+                    </div>
+                    <!-- Arrow Button -->
+                    <button class="carousel-btn" id="aboutCarouselBtn" aria-label="Next photo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Text Content -->
                 <div class="about-text">
                     <p>
                         我是張祐愷，目前就讀於國立虎尾科技大學材料科學與綠色能源工程碩士班，
@@ -95,18 +134,18 @@
                         為未來的 Digital Twin 預測模型奠定基礎。
                     </p>
                 </div>
-                <div class="about-highlights reveal">
-                    <div class="highlight-item">
-                        <div>
-                            <div class="highlight-value">GPA 4.0</div>
-                            <div class="highlight-label">碩士班成績</div>
-                        </div>
+            </div>
+            <div class="about-highlights reveal">
+                <div class="highlight-item">
+                    <div>
+                        <div class="highlight-value">GPA 4.0</div>
+                        <div class="highlight-label">碩士班成績</div>
                     </div>
-                    <div class="highlight-item">
-                        <div>
-                            <div class="highlight-value">TOEIC 710</div>
-                            <div class="highlight-label">英語能力</div>
-                        </div>
+                </div>
+                <div class="highlight-item">
+                    <div>
+                        <div class="highlight-value">TOEIC 710</div>
+                        <div class="highlight-label">英語能力</div>
                     </div>
                 </div>
             </div>

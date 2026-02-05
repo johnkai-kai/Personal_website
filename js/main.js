@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initCopyFunctionality();
     initBackToTop();
+    initCarousel();
 });
 
 // Utility: Throttle function
@@ -190,5 +191,38 @@ function initBackToTop() {
             top: 0,
             behavior: 'smooth'
         });
+    });
+}
+
+// Photo Carousel System
+function initCarousel() {
+    // Hero Carousel
+    const heroCarousel = document.getElementById('heroCarousel');
+    const heroBtn = document.getElementById('heroCarouselBtn');
+    if (heroCarousel && heroBtn) {
+        setupCarousel(heroCarousel, heroBtn);
+    }
+
+    // About Carousel
+    const aboutCarousel = document.getElementById('aboutCarousel');
+    const aboutBtn = document.getElementById('aboutCarouselBtn');
+    if (aboutCarousel && aboutBtn) {
+        setupCarousel(aboutCarousel, aboutBtn);
+    }
+}
+
+function setupCarousel(carousel, btn) {
+    const photos = carousel.querySelectorAll('.carousel-photo');
+    let currentIndex = 0;
+
+    btn.addEventListener('click', () => {
+        // Remove active from current
+        photos[currentIndex].classList.remove('active');
+
+        // Move to next
+        currentIndex = (currentIndex + 1) % photos.length;
+
+        // Add active to new current
+        photos[currentIndex].classList.add('active');
     });
 }
